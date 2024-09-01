@@ -4,7 +4,7 @@ from scapy.layers.tls.all import TLS, TLSClientHello, TLS_Ext_ServerName
 # filter = "ip dst 130.255.77.28"
 filter = "net 0.0.0.0/0"
 
-interface = "eth0"
+interface = "enp0s3"
 
 def packet_callback(packet):
     if packet.haslayer(TLS):
